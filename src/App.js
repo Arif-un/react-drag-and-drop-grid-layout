@@ -43,8 +43,7 @@ export default function DragFromOutsideLayout() {
 
   return (
     <div>
-      <div>Compaction type: {_.capitalize(compactType) || "No Compaction"}</div>
-      <button onClick={onNewLayout}>Generate New Layout</button>
+      <div>Compaction type: {compactType || "No Compaction"}</div>
       <button onClick={onCompactTypeChange}>Change Compaction Type</button>
       <div
         className="droppable-element"
